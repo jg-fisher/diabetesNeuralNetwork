@@ -21,7 +21,6 @@ model = Sequential()
 model.add(Dense(15, input_dim=8, activation='relu')) # input layer requires input_dim param
 model.add(Dense(10, activation='relu'))
 model.add(Dense(8, activation='relu'))
-model.add(Dense(5, activation='relu'))
 model.add(Dropout(.2))
 model.add(Dense(1, activation='sigmoid')) # sigmoid instead of relu for final probability between 0 and 1
 
@@ -29,7 +28,7 @@ model.add(Dense(1, activation='sigmoid')) # sigmoid instead of relu for final pr
 model.compile(loss="binary_crossentropy", optimizer="adam", metrics=['accuracy'])
 
 # call the function to fit to the data (training the network)
-model.fit(x_train, y_train, epochs = 1000, batch_size=10, validation_data=(x_test, y_test))
+model.fit(x_train, y_train, epochs = 1000, batch_size=20, validation_data=(x_test, y_test))
 
 # save the model
 model.save('weights.h5')

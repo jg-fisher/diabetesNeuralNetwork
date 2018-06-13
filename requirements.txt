@@ -1,0 +1,10 @@
+h5py==2.8.0
+Keras==2.2.0
+Keras-Applications==1.0.2
+Keras-Preprocessing==1.0.1
+numpy==1.14.5
+PyYAML==3.12
+scikit-learn==0.19.1
+scipy==1.1.0
+six==1.11.0
+sklearn==0.0
