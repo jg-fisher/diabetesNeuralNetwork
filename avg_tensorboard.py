@@ -42,7 +42,10 @@ def write_combined_events(dpath, d_combined, dname='combined'):
         writer.flush()
 
 dpath = 'Graph-nostruct'
+dpath2 = 'Graph-struct'
 
 d = tabulate_events(dpath)
-
 write_combined_events(dpath, d)
+
+d2 = tabulate_events(dpath2)
+write_combined_events(dpath2, d2)

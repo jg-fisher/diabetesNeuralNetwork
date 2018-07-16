@@ -33,7 +33,7 @@ tbCallBack = keras.callbacks.TensorBoard(log_dir='./Graph-nostruct', histogram_f
 # call the function to fit to the data (training the network)
 trains = 10
 for _ in range(trains):
-    model.fit(x_train, y_train, epochs=150, batch_size=20, validation_data=(x_test, y_test), callbacks=[tbCallBack])
+    model.fit(x_train, y_train, epochs=500, batch_size=20, validation_data=(x_test, y_test), callbacks=[tbCallBack])
 
 # save the model
 model.save('weights.h5')
